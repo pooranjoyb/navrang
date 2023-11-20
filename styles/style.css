@@ -95,3 +95,40 @@ html {
     font-size: 1.2rem;
     flex-direction: column;
 }
+
+/* Footer  */
+
+video {
+    object-fit: cover;
+    width: 99vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    left: 0;
+}
+
+.viewport_header {
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+footer .heading{
+    display: flex;
+    height: 45vh;
+    font-size: 5rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+footer .socials{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
