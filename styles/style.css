@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
 
-.para{
+.para {
     font-family: 'PT Sans Caption', sans-serif;
 }
 
@@ -28,14 +28,15 @@ html {
     cursor: pointer;
 }
 
-.links a{
+.links a {
     display: flex;
     color: black;
     text-decoration: none;
     flex-direction: column;
     margin-top: 2rem;
-    
+
 }
+
 .content {
     height: 100vh;
     width: 100%;
@@ -96,6 +97,33 @@ html {
     flex-direction: column;
 }
 
+/* About  */
+.about {
+    margin: 5rem 0 5rem 0;
+    display: flex;
+    /* gap: 5rem; */
+    justify-content: space-evenly;
+}
+
+.about img {
+    width: 35%;
+    border-radius: 1rem;
+}
+
+.about div {
+    width: 30%;
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.about div h1 {
+    font: bolder;
+    text-transform: uppercase;
+}
+
 /* Footer  */
 
 video {
@@ -119,7 +147,7 @@ video {
     color: white;
 }
 
-footer .heading{
+footer .heading {
     display: flex;
     height: 45vh;
     font-size: 5rem;
@@ -128,7 +156,19 @@ footer .heading{
     justify-content: center;
 }
 
-footer .socials{
+footer .socials {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+footer .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: white;
+    padding: 1pc;
+    padding-top: 1.3pc;
+    margin-top: -1rem;
+    background-color: #4C4646;
 }
