@@ -100,28 +100,6 @@ html {
     padding: 1.5rem;
 }
 
-/* Icons section  */
-.icon-section {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.icons {
-    align-items: center;
-    gap: 1rem;
-    font-family: 'Raleway', sans-serif;
-    justify-content: center;
-    display: flex;
-    font-size: 1.2rem;
-    flex-direction: column;
-}
-
-.icons svg {
-    height: 60px;
-    width: 60px;
-}
 
 /* About  */
 .about {
@@ -228,23 +206,6 @@ footer .copyright {
         width: 100%;
         font-size: 1.2rem;
         padding: 1.5rem;
-    }
-
-    .icon-section {
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 1rem;
-        margin-bottom: 0rem;
-    }
-
-    .icons svg {
-        height: 30px;
-        width: 30px;
-    }
-
-    .icons span {
-        text-align: center;
-        font-size: small;
     }
 
     .about {
