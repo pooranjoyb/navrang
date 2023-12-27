@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 .para {
     font-family: 'PT Sans Caption', sans-serif;
@@ -8,9 +8,10 @@
 html {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
-.phone{
+.phone {
     display: none;
 }
 
@@ -23,18 +24,21 @@ html {
 
 .navbar {
     padding: 1rem 0 0 2rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .navbar #btn {
     background-color: transparent;
     border: 0;
     margin-left: 2rem;
+    font-family: 'Raleway', sans-serif;
     cursor: pointer;
 }
 
 .links a {
     display: flex;
     color: black;
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     flex-direction: column;
     margin-top: 2rem;
@@ -42,10 +46,10 @@ html {
 }
 
 .content {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     color: white;
-    font-family: 'Alex Brush', cursive;
+    font-family: 'Alex Brush' !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,10 +69,12 @@ html {
 /* Services  */
 .services img {
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .services_content {
     display: flex;
+    font-family: 'Raleway', sans-serif;
     margin-top: 2rem;
     justify-content: space-around;
 }
@@ -95,17 +101,23 @@ html {
 .icons {
     align-items: center;
     gap: 1rem;
+    font-family: 'Raleway', sans-serif;
     justify-content: center;
     display: flex;
     font-size: 1.2rem;
     flex-direction: column;
 }
 
+.icons svg {
+    height: 60px;
+    width: 60px;
+}
+
 /* About  */
 .about {
     margin: 5rem 0 5rem 0;
+    font-family: 'Raleway', sans-serif;
     display: flex;
-    /* gap: 5rem; */
     justify-content: space-evenly;
 }
 
@@ -131,6 +143,7 @@ html {
 /* Footer  */
 
 video {
+    font-family: 'Raleway', sans-serif;
     object-fit: cover;
     width: 99vw;
     height: 100vh;
@@ -142,6 +155,7 @@ video {
 
 .viewport_header {
     height: 50vh;
+    font-family: 'Raleway', sans-serif;
     width: 100%;
     position: absolute;
     text-align: center;
@@ -153,6 +167,7 @@ video {
 
 footer .heading {
     display: flex;
+    font-family: 'Raleway', sans-serif;
     height: 45vh;
     font-size: 5rem;
     align-items: center;
@@ -163,12 +178,14 @@ footer .heading {
 footer .socials {
     font-size: 1.5rem;
     font-weight: bold;
+    font-family: 'Raleway', sans-serif;
 }
 
 footer .copyright {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Raleway', sans-serif;
     font-weight: bolder;
     color: white;
     padding: 1pc;
@@ -178,22 +195,89 @@ footer .copyright {
 }
 
 @media screen and (max-width: 800px) {
-    #landing, .services, #about, footer, .about {
-        display: none;
+    .content span {
+        font-size: 6rem;
+        margin-bottom: 2rem;
     }
 
-    .phone{
-        height: 70vh;
-        width: 100%;
-        display: flex;
+    #landing {
+        background: url(../assets/bg.png) no-repeat;
+        background-size: cover;
+;
+    }
+
+    .services_content {
         flex-direction: column;
+    }
+
+    .services_content span {
+        font-size: 2rem;
+    }
+
+    .services_content div {
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 1.5rem;
+    }
+
+    .icon-section {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .icons svg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .icons span {
         text-align: center;
+        font-size: small;
+    }
+
+    .about {
+        margin: 5rem 0 5rem 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about img {
+        width: 60%;
+    }
+
+    .about h1 {
+        font-size: larger;
+        width: 100%
+    }
+
+    .about div {
+        width: 80%;
+    }
+
+    #about2 {
+        flex-direction: column-reverse;
+    }
+
+    footer .heading {
+        font-size: 3rem;
+    }
+
+    footer .copyright {
+        font-size: .9rem;
+        text-align: center;
+    }
+
+    .viewport_header {
+        height: 100vh;
+        font-family: 'Raleway', sans-serif;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        z-index: 1;
         align-items: center;
         justify-content: center;
-    }
-
-    .phone img{
-        width: 30%;
-        margin-bottom: 3rem;
+        color: white;
     }
 }
